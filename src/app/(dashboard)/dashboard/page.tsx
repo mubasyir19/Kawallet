@@ -9,7 +9,7 @@ export default function DashboardPage() {
       <Header />
       <section className='mt-10'>
         <section className='flex justify-between gap-x-7'>
-          <div className='grow w-1/3'>
+          <div className='w-96'>
             <div id='cardBank' className='relative p-7 bg-[#056272] h-48 rounded-2xl items-stretch'>
               <div className='flex items-center justify-between'>
                 <p className='text-white font-medium text-base'>Jajan Card</p>
@@ -34,7 +34,7 @@ export default function DashboardPage() {
               </div>
             </div>
           </div>
-          <div className='grid grid-cols-3 gap-5'>
+          <div className='flex-grow grid grid-cols-3 gap-5'>
             <div className='card p-5 h-48 w-full bg-[#003872] rounded-2xl'>
               <Image src='/images/turbo.png' width={48} height={48} alt='turbo' className='h-12 w-12' />
               <p className='mt-2.5 text-white text-base font-semibold'>
@@ -76,11 +76,11 @@ export default function DashboardPage() {
           </div>
         </section>
         <section className='mt-10 flex gap-x-7'>
-          <div className='w-1/4 h-full py-8 px-6 border border-[#E2E3EA] rounded-2xl'>
+          <div className='w-1/3 h-full py-8 px-6 border border-[#E2E3EA] rounded-2xl'>
             <h3 className='text-black font-medium text-xl'>History Transactions</h3>
             <div className='mt-5 bg-black w-full h-20 flex items-center rounded-lg'>
               <div className='w-full px-5 flex justify-between items-center'>
-                <Image src='/images/logo3.png' width={66} height={14} alt='logo3' className='w-16 h-3' />
+                <Image src='/images/logo3.png' width={66} height={14} alt='logo3' className='w-10 h-auto' />
                 <p className='text-white font-semibold text-xl'>$ 10,200.00</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function DashboardPage() {
               </button>
             </div>
           </div>
-          <div className='w-3/4 h-full p-7 border border-[#E2E3EA] rounded-2xl'>
+          <div className='flex-grow h-full p-7 border border-[#E2E3EA] rounded-2xl'>
             <div className='flex items-center justify-between'>
               <h3 className='text-xl font-medium text-black'>Sales Statistic</h3>
               <div className='flex gap-x-4 items-center'>
